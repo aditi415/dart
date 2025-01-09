@@ -1,0 +1,11 @@
+import 'dart:io';
+class test{
+    add({required int a,required int b}){
+        int c=a+b;
+        print(c);
+    }
+}
+void main(){
+    test obj=test();
+    obj.add(a:10,b:20);
+}
