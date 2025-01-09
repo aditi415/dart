@@ -1,0 +1,16 @@
+import 'dart:io';
+
+class demo{
+    int x=200;
+    int y=300;
+    
+    void display(int x,int y){
+        print("X=${this.x} Y=${this.y}");
+    }
+}
+
+void main(){
+  demo obj=demo();
+  obj.display(10,20);
+    
+}
