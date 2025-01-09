@@ -1,0 +1,15 @@
+class Super{
+    Super(){
+        print"parent constructor");
+    }
+}
+
+class Child extends Super{
+    Child(){
+        print("child constructor");
+    }
+}
+
+void main(){
+    Child obj=Child();
+}
