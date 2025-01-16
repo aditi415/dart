@@ -1,7 +1,26 @@
 import 'dart:io';
 void main(){
-    stdout.write("Enter your name: ");
-    var name=stdin.readLineSync()!;
-    
+    /*stdout.write("Enter your name: ");
+    var name=stdin.readLineSync()!; //strore in name
    print("Welcome $name");
+   
+   new Human(); //creating instance or object of class(it can also created without using new)
 }
+*/
+// declaration of variable
+int a=10;       //initializing value to variable
+print(a);
+BigInt longValue;
+longValue=BigInt.parse('12567880008323');
+print(longValue);
+}
+
+
+
+
+/*
+//class
+class Human//(classname) here class is keyword and Human is identifier
+{
+    
+}*/
