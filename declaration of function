@@ -1,0 +1,11 @@
+void main(){
+    var myC=myClass(); //object of class(myC)
+    myC.printname('Aditi'); //function calling
+    
+     myC.printname('flutter');
+}
+class myClass{
+  void printname(String name){     //declaration passing parameter 
+      print(name); //definition
+  }
+}
