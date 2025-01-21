@@ -1,0 +1,21 @@
+
+void main(){
+ 
+  String name="Aditi";
+
+  //bool to check weather user has login or not
+  //bool isLogin=true;
+  
+  //var
+  var subject="maths";
+  var rollno=12;
+ 
+  //dynamic means different types of data can be store in one variable it happens to be override
+  
+  var section;   
+  dynamic section;  //can aslo take dynamic
+  section="D";//string
+  section=7;//int
+  section=false;//bool
+  
+}
