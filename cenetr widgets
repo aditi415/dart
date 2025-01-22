@@ -1,0 +1,21 @@
+class myhomepgstate extends state<myhomepg>
+ 
+ @override
+ Widget build(BuildContext context){
+     return Scaffold(
+         appBar:AppBar(
+             title:Text('flutter container')
+             ),
+             body:cente(
+                 Child:Container(
+                 width:20,
+                 height:100,
+                 color:Colors.bluegrey,
+                 chils:Text('this is cenetr of conatiner',
+                 style:Textstyle:Italic
+                 ),
+                 ),
+                 )
+                ),
+         );
+ }
