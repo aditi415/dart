@@ -1,0 +1,13 @@
+Container(
+  width: 100,
+  height: 100,
+  color: Colors.red,
+  child: Text('Inside a Container'),
+)
+        text widget 
+
+Text(
+  'Hello, Flutter!',
+  style: TextStyle(fontSize: 20, color: Colors.blue),
+  textAlign: TextAlign.center,
+)
