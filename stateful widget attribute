@@ -1,0 +1,22 @@
+class MyStatefulWidget extends StatefulWidget {
+  final String title;
+
+  MyStatefulWidget({required this.title});
+
+  @override
+  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+}
+
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  String message = 'Initial Message';
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(widget.title), // Accesses attribute from StatefulWidget.
+        Text(message), // Dynamic state.
+      ],
+    );
+  }
+}
