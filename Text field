@@ -1,0 +1,4 @@
+TextField(
+  decoration: InputDecoration(labelText: 'Enter text'),
+  onChanged: (value) => print(value),
+)
