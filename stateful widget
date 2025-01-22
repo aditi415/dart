@@ -1,0 +1,25 @@
+class MyStatefulWidget extends StatefulWidget {
+  @override
+  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+}
+
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  String message = 'Hello, Flutter!';
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(message),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              message = 'Button Clicked!';
+            });
+          },
+          child: Text('Press Me'),
+        ),
+      ],
+    );
+  }
+}
