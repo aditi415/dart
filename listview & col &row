@@ -1,0 +1,12 @@
+ListView(
+  children: [Text('Item 1'), Text('Item 2')],
+)
+
+                         column AND row 
+
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  crossAxisAlignment: CrossAxisAlignment.start,
+  children: [Text('Item 1'), Text('Item 2')],
+)
+
