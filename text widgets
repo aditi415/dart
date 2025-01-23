@@ -1,0 +1,11 @@
+return Scaffold(
+    appBar:AppBar(
+        title:Text('flutter'),
+        ),
+        body:Text('Hello Devops', style:TextStyle(
+               fontsize:25,
+               color:Colors.blue,
+               fontweight:fontweight.w800,      //using w we can asign how much bold text we need 
+               backgroundColor:Colors.lightyellow,
+            ),
+        ),
