@@ -1,0 +1,189 @@
+1. ElevatedButton
+
+    A button with a raised look that adds depth to flat layouts, emphasizing primary actions.
+    Replaces the now-deprecated RaisedButton.
+    Use Case: For primary actions like submitting forms or saving data.
+
+ElevatedButton(
+  onPressed: () {
+    print('ElevatedButton Pressed');
+  },
+  child: Text('Elevated Button'),
+),
+
+2. TextButton
+
+    A flat, text-only button with no elevation.
+    Replaces the deprecated FlatButton.
+    Use Case: For less important or secondary actions, like "Cancel" or "Learn More."
+
+TextButton(
+  onPressed: () {
+    print('TextButton Pressed');
+  },
+  child: Text('Text Button'),
+),
+
+3. OutlinedButton
+
+    A button with a border outline and no elevation.
+    Replaces the deprecated OutlineButton.
+    Use Case: For secondary actions that require some visual distinction, like "Try Again" or "Skip."
+
+OutlinedButton(
+  onPressed: () {
+    print('OutlinedButton Pressed');
+  },
+  child: Text('Outlined Button'),
+),
+
+4. IconButton
+
+    A button that displays an icon instead of text.
+    Often used for toolbar actions or in combination with other widgets like AppBar.
+    Use Case: For actions like "Back," "Search," or "Favorite."
+
+IconButton(
+  onPressed: () {
+    print('IconButton Pressed');
+  },
+  icon: Icon(Icons.favorite),
+),
+
+5. FloatingActionButton
+
+    A circular button that floats above the interface and is used for primary or frequently accessed actions.
+    Use Case: For primary actions like "Add," "Compose," or "Search."
+
+FloatingActionButton(
+  onPressed: () {
+    print('FloatingActionButton Pressed');
+  },
+  child: Icon(Icons.add),
+),
+
+6. DropdownButton
+
+    A button that shows a dropdown menu when clicked, allowing users to select one item from a list.
+    Use Case: For selecting from a predefined list, like "Choose a country" or "Pick a category."
+
+DropdownButton<String>(
+  value: 'One',
+  items: <String>['One', 'Two', 'Three', 'Four']
+      .map((String value) {
+    return DropdownMenuItem<String>(
+      value: value,
+      child: Text(value),
+    );
+  }).toList(),
+  onChanged: (String? newValue) {
+    print('Selected: $newValue');
+  },
+),
+
+7. PopupMenuButton
+
+    A button that shows a popup menu with a list of options.
+    Use Case: For contextual actions like "Edit," "Delete," or "Settings."
+
+PopupMenuButton<String>(
+  onSelected: (value) {
+    print('Selected: $value');
+  },
+  itemBuilder: (BuildContext context) {
+    return [
+      PopupMenuItem(
+        value: 'Edit',
+        child: Text('Edit'),
+      ),
+      PopupMenuItem(
+        value: 'Delete',
+        child: Text('Delete'),
+      ),
+    ];
+  },
+),
+
+8. GestureDetector (Custom Button)
+
+    A highly flexible widget that can detect various gestures, including taps.
+    Use Case: When you need a button with completely custom styling or behavior.
+
+GestureDetector(
+  onTap: () {
+    print('Custom Button Pressed');
+  },
+  child: Container(
+    padding: EdgeInsets.all(10),
+    color: Colors.blue,
+    child: Text('Custom Button', style: TextStyle(color: Colors.white)),
+  ),
+),
+
+9. BackButton
+
+    A specialized button with an icon (usually a left arrow) to navigate back in the app's navigation stack.
+    Use Case: For navigating back to the previous screen.
+
+BackButton(
+  onPressed: () {
+    print('BackButton Pressed');
+  },
+),
+
+10. CloseButton
+
+    A button that displays a close icon (usually an "X").
+    Use Case: For closing dialogs, modals, or screens.
+
+CloseButton(
+  onPressed: () {
+    print('CloseButton Pressed');
+  },
+),
+
+11. ToggleButtons
+
+    A group of buttons where one or more buttons can be selected.
+    Use Case: For toggling states like "Bold," "Italic," "Underline."
+
+ToggleButtons(
+  isSelected: [true, false, false],
+  onPressed: (int index) {
+    print('Button $index toggled');
+  },
+  children: <Widget>[
+    Icon(Icons.format_bold),
+    Icon(Icons.format_italic),
+    Icon(Icons.format_underlined),
+  ],
+),
+
+12. CupertinoButton (iOS Style)
+
+    A button that follows the iOS design guidelines.
+    Use Case: For apps targeting iOS users.
+
+import 'package:flutter/cupertino.dart';
+
+CupertinoButton(
+  child: Text('Cupertino Button'),
+  onPressed: () {
+    print('CupertinoButton Pressed');
+  },
+),
+
+Summary Table:
+Button Type	Use Case	Replaces
+ElevatedButton	Primary actions	RaisedButton
+TextButton	Secondary actions	FlatButton
+OutlinedButton	Highlight secondary actions	OutlineButton
+IconButton	Icon-based actions	-
+FloatingActionButton	Primary floating action	-
+DropdownButton	Dropdown list selection	-
+PopupMenuButton	Contextual menu actions	-
+GestureDetector	Custom button functionality	-
+BackButton	Navigate back in the app	-
+CloseButton	Close dialogs or screens	-
+ToggleButtons	Toggle between options	-
+CupertinoButton	iOS-style button
