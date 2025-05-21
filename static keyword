@@ -10,7 +10,7 @@ class addition{
     }
 }
 
-//in different file 
+//in different file
 
 class Test{
     test(){
