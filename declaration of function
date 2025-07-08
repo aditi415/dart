@@ -8,4 +8,4 @@ class myClass{
   void printname(String name){     //declaration passing parameter 
       print(name); //definition
   }
-}
+};
