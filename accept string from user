@@ -1,4 +1,4 @@
-iimport 'dart:io';
+import 'dart:io';
 void main(){
   stdout.write("enter your name=");
   String name=stdin.readLineSync()!;
