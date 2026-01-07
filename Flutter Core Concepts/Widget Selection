@@ -1,0 +1,51 @@
+WIDGET SELECTION GUIDE
+When to use which widget:
+Need                                   Use	                                   Why
+Simple box with styling    	      Container	                         All-in-one solution
+Just spacing	                     SizedBox	More performant
+Inset spacing                     	Padding	Semantic clarity
+Horizontal arrangement               	Row	Linear layout
+Vertical arrangement	       Column	Linear layout
+Overlapping widgets            	Stack	Layer multiple widgets
+Dynamic space distribution	       Expanded/Flexible	Fill available space
+Scrollable content	ListView/GridView	Performance with many items
+Text display	Text/RichText	Styling options
+Images	Image.network/asset	Multiple sources
+User input	TextField/Form	Validation, controllers
+Navigation	AppBar/Drawer/TabBar	Standard patterns
+Theming	ThemeData	Consistency
+Common Patterns:
+dart
+// Card pattern
+Card(
+  child: Padding(
+    padding: EdgeInsets.all(16),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Title', style: Theme.of(context).textTheme.headline6),
+        SizedBox(height: 8),
+        Text('Description'),
+      ],
+    ),
+  ),
+)
+
+// List item pattern
+ListTile(
+  leading: CircleAvatar(backgroundImage: NetworkImage(url)),
+  title: Text('Item Title'),
+  subtitle: Text('Item Subtitle'),
+  trailing: Icon(Icons.arrow_forward),
+  onTap: () {},
+)
+
+// Form field pattern
+TextFormField(
+  decoration: InputDecoration(
+    labelText: 'Field',
+    border: OutlineInputBorder(),
+    filled: true,
+  ),
+  validator: (value) => value!.isEmpty ? 'Required' : null,
+)
