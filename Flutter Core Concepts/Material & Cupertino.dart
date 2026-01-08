@@ -70,6 +70,8 @@ MaterialApp(
 )
 Purpose: MaterialApp for Android/Material design, CupertinoApp for iOS design. Most apps use MaterialApp with platform-specific widgets where needed.
 
+
+  
 ThemeData - Complete App Styling
 dart
 ThemeData(
