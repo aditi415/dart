@@ -57,6 +57,9 @@ RichText(
 // )
 Purpose: Display text with styling. RichText for multiple styles in single widget.
 
+
+
+  
 2. Icon
 dart
 Icon(
