@@ -1,5 +1,4 @@
 1. Text & RichText
-dart
 // Basic Text
 Text(
   'Hello Flutter!',
@@ -49,19 +48,11 @@ RichText(
     ],
   ),
 )
-
-// Text with Google Fonts (add google_fonts package)
-// Text(
-//   'Styled Text',
-//   style: GoogleFonts.lato(fontSize: 30),
-// )
 Purpose: Display text with styling. RichText for multiple styles in single widget.
 
 
-
-  
 2. Icon
-dart
+  
 Icon(
   Icons.favorite, // Material Icons
   color: Colors.red,
@@ -87,19 +78,15 @@ IconButton(
 )
 Purpose: Display vector icons from Material/Cupertino or custom icon fonts.
 
+  
 3. Image
-dart
+  
 // 1. Network Image
 Image.network(
   'https://example.com/image.jpg',
   width: 100,
   height: 100,
   fit: BoxFit.cover, // How to fit in box
-  // BoxFit.fill - Stretch to fill (distorts)
-  // BoxFit.contain - Fit within, maintain aspect ratio
-  // BoxFit.cover - Cover box, maintain aspect ratio
-  // BoxFit.fitWidth/fitHeight
-  // BoxFit.scaleDown - Shrink if too large
   
   loadingBuilder: (context, child, loadingProgress) {
     if (loadingProgress == null) return child;
@@ -145,13 +132,9 @@ Image.file(
 Image.memory(
   Uint8List.fromList([/* bytes */]),
 )
-
-// For cached network images, use cached_network_image package
-// CachedNetworkImage(imageUrl: '...')
 Purpose: Display images from various sources with loading/error handling.
 
 4. Buttons
-dart
 // ElevatedButton - Primary action
 ElevatedButton(
   onPressed: () {
@@ -224,6 +207,7 @@ FloatingActionButton(
 )
 Purpose: Interactive buttons for user actions. Different styles for different emphasis levels.
 
+  
 5. TextField & Form
 dart
 // Single TextField
