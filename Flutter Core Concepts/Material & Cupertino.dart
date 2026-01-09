@@ -1,5 +1,5 @@
 MaterialApp vs CupertinoApp
-dart
+
 // Material Design (Android-style)
 MaterialApp(
   title: 'Material App',
@@ -25,6 +25,8 @@ MaterialApp(
   ],
 )
 
+
+  
 // Cupertino Design (iOS-style)
 CupertinoApp(
   title: 'Cupertino App',
